@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&family=Open+Sans&display=swap');
 
 *{
     padding: 0;
@@ -58,7 +59,7 @@ header .nav-btn{
     border-radius: 16px;
   }
 
-  .buttn-login {
+.buttn-login {
     background-color: #ddd;
     border: none;
     color: black;
@@ -69,7 +70,21 @@ header .nav-btn{
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 16px;
-  }
+}
+
+.buttn-test {
+    background-color: #84c86f;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
 
 @media only screen and (max-width: 1024px){
     header .nav-btn {
@@ -95,4 +110,15 @@ header .nav-btn{
     header .responsive_nav{
         transform: none;
     }
+}
+
+main {
+    
+    text-align: center;
+    border: 5rem;
+    font-family: 'Cuprum', sans-serif;
+    letter-spacing: 20rem;
+    padding: 6rem;
+    background-color: var(--mainColour);
+    color: var(--textColour);
 }
