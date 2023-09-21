@@ -11,7 +11,7 @@ function Navbar() {
 
   return(
     <header>
-      <h3>Logo</h3>
+      <h3 className="logo">Turtle</h3>
       <nav ref={navRef}>
         <a href='/#'>Home</a>
         <a href='/#'>Courses</a>
@@ -24,6 +24,14 @@ function Navbar() {
       <button className="nav-btn" onClick={showNavbar}>
         <FaBars/>
       </button>
+      <div>
+      <button className="buttn-login">
+        Log In
+      </button>
+      <button className="buttn-signup">
+        Sign Up
+      </button>
+      </div>
     </header>
   );
 }
