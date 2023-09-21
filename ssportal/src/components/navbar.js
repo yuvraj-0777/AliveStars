@@ -1,30 +1,23 @@
-'use client'
+import {FaBars, FaTimes} from "react-icons/fa"
 
-import { useState } from 'react';
-import {AiOutlineMenu,AiOutlineClose} from 'react-icons/ai'
-
-const Navbar = () => {
-  const [navbarVisible, setNavbarVisible] = useState(false);
-
-
-  const toggleNavbar = () => {
-    setNavbarVisible(!navbarVisible);
-  };
-
-  return (
-    <div className={`navbar ${navbarVisible ? 'active' : ''}`}>
-      <button onClick={toggleNavbar} className="toggle-button">
-        {navbarVisible ? <AiOutlineClose/> : <AiOutlineMenu/>}
-      </button>
-      <div className='afternav'>
+function Navbar() {
+  return(
+    <header>
+      <h3>Logo</h3>
       <nav>
-        <ul>
-          <li><a href="/"></a></li>
-        </ul>
+        <a href='/#'>Home</a>
+        <a href='/#'>Courses</a>
+        <a href='/#'>text</a>
+        <a href='/#'>text</a>
+        <button>
+          <FaTimes/>
+        </button>
       </nav>
-      </div>
-    </div>
+      <button>
+        <FaBars/>
+      </button>
+    </header>
   );
-};
+}
 
 export default Navbar;
