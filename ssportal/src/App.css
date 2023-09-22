@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../public/homeBack.jpeg');
+  background-size: cover; /* This ensures the image covers the entire viewport */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps the image fixed in place */
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
