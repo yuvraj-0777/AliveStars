@@ -1,4 +1,6 @@
 'use client'
+import React from 'react';
+import styles from "../pages.module.css"
 
 import { useState } from 'react';
 import {AiOutlineMenu,AiOutlineClose} from 'react-icons/ai'
@@ -17,10 +19,18 @@ const Navbar = () => {
         {navbarVisible ? <AiOutlineClose/> : <AiOutlineMenu/>}
       </button>
       <div className='afternav'>
-      <nav>
+      <nav className='navbar'>
+        <div className='internalbox'>
         <ul>
-          <li><a href="/"></a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">Courses</a></li>
+          <li><a href="">Batches</a></li>
+          <li><a href="">About</a></li>
         </ul>
+        <div className='login'>
+          
+        </div>
+        </div>
       </nav>
       </div>
     </div>

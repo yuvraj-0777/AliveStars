@@ -1,0 +1,10 @@
+li{
+    position: relative;
+    left:25%;
+    margin-left: 3%;
+    padding:15px;
+    font-size: 30px;
+    display: inline;
+    height:15%;
+    width:15%;
+}
