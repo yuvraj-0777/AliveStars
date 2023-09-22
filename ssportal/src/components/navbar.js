@@ -1,40 +1,39 @@
-'use client'
-import React from 'react';
-import styles from "../pages.module.css"
+import { useRef } from "react";
+import {FaBars, FaTimes} from "react-icons/fa"
+import "../styles/main.css"
 
-import { useState } from 'react';
-import {AiOutlineMenu,AiOutlineClose} from 'react-icons/ai'
+function Navbar() {
+  const navRef = useRef();
 
-const Navbar = () => {
-  const [navbarVisible, setNavbarVisible] = useState(false);
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav")
+  }
 
-
-  const toggleNavbar = () => {
-    setNavbarVisible(!navbarVisible);
-  };
-
-  return (
-    <div className={`navbar ${navbarVisible ? 'active' : ''}`}>
-      <button onClick={toggleNavbar} className="toggle-button">
-        {navbarVisible ? <AiOutlineClose/> : <AiOutlineMenu/>}
-      </button>
-      <div className='afternav'>
-      <nav className='navbar'>
-        <div className='internalbox'>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Courses</a></li>
-          <li><a href="">Batches</a></li>
-          <li><a href="">About</a></li>
-        </ul>
-        <div className='login'>
-          
-        </div>
-        </div>
+  return(
+    <header>
+      <h3 className="logo">Turtle</h3>
+      <nav ref={navRef}>
+        <a href='/#'>Home</a>
+        <a href='/#'>Courses</a>
+        <a href='/#'>text</a>
+        <a href='/#'>text</a>
+        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+          <FaTimes/>
+        </button>
       </nav>
+      <button className="nav-btn" onClick={showNavbar}>
+        <FaBars/>
+      </button>
+      <div>
+      <button className="buttn-login">
+        Log In
+      </button>
+      <button className="buttn-signup">
+        Sign Up
+      </button>
       </div>
-    </div>
+    </header>
   );
-};
+}
 
 export default Navbar;
