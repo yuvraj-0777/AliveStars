@@ -76,13 +76,21 @@ header .nav-btn{
     background-color: #84c86f;
     border: none;
     color: black;
-    padding: 10px 20px;
+    padding: 25px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 4px 2px;
+    position: relative;
+    top:150px;
     cursor: pointer;
     border-radius: 16px;
+}
+
+.buttn-test:hover{
+    border: 1px solid  black;
+    padding: 25px 70px;
+    box-shadow:0px 0px 15px black ;
+    
 }
 
 
@@ -113,7 +121,8 @@ header .nav-btn{
 }
 
 main {
-    
+    height:200vh;
+    width:100%;
     text-align: center;
     border: 5rem;
     font-family: 'Cuprum', sans-serif;
@@ -121,4 +130,7 @@ main {
     padding: 6rem;
     background-color: var(--mainColour);
     color: var(--textColour);
+}
+.home{
+    background-image: url(../../public/homeBack.jpeg);
 }

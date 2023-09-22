@@ -3,7 +3,7 @@ import React from 'react';
 function Home() {
   return (
     <>
-    <main>
+    <main className='home'>
     <button className="buttn-test">
        <a> TEST YOURSELF NOW!! </a>
       </button>
