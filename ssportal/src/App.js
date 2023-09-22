@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from './components/navbar';
 import Home from './components/home';
 import { Route, Routes } from 'react-router-dom';
-import Quizcomp from './components/quizhome';
+import Quizcomp from './HomeQuiz/quizhome';
 import Bloomtxt from './components/bloomtxt';
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home/>} />
             <Route path='/bloomtxt' element={<Bloomtxt/>} />
+            <Route path='/quizhome' element={<Quizcomp/>} />
           </Routes>
         </div>
     </React.Fragment>
