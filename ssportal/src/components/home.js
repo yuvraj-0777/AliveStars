@@ -8,7 +8,7 @@ function Home() {
 
   return (
     <>
-    <main>
+    <main className='home'>
     <button className="buttn-test">
        <a onClick={sttest}> TEST YOURSELF NOW!! </a>
       </button>
