@@ -2,5 +2,11 @@ import React from 'react'
 
 const Quizcomp = () => 
 {
-    return
+    return(
+        <div>
+            Quiz
+        </div>
+    )
 }
+
+export default Quizcomp;
