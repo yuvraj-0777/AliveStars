@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Anek Malayalam', sans-serif;
-  background: linear-gradient(90.04deg, #800080 0.03%, #ffc0cb 99.96%);
+  background-color:#c3dd83;
   color: #11052c;
   display: flex;
   justify-content: center;
@@ -11,7 +11,7 @@ body {
 }
 
 .quiz-container {
-  max-width: 500px;
+  max-width: 850px;
   min-width: 250px;
   background: #ffffff;
   border-radius: 4px;
@@ -22,7 +22,7 @@ body {
 .quiz-container .active-question-no {
   font-size: 32px;
   font-weight: 500;
-  color: #800080;
+  color: #A4D68f;
 }
 
 .quiz-container .total-question {
@@ -45,7 +45,7 @@ body {
 .quiz-container ul li {
   text-decoration: none;
   list-style: none;
-  color: #2d264b;
+  color: black;
   font-size: 16px;
   background: #ffffff;
   border: 1px solid #eaeaea;
@@ -56,15 +56,16 @@ body {
 }
 
 .quiz-container ul .selected-answer {
-  background: #ffd6ff;
-  border: 1px solid #800080;
+  background: #c3dd83;
+  border: 1px solid #c3dd83;
+  text-shadow: 0px 0px 1px;
 }
 
 .quiz-container button {
-  background: linear-gradient(90.04deg, #800080 0.03%, #ffc0cb 99.96%);
+  background-color: #c3dd83;
   border-radius: 9px;
-  font-size: 18px;
-  color: #ffffff;
+  font-size: 20px;
+  color: black;
   padding: 10px 42px;
   outline: none;
   border: none;
@@ -87,14 +88,34 @@ body {
   font-size: 24px;
   letter-spacing: 1.4px;
   text-align: center;
+  box-shadow: 0px 0px 10px #A4D68f;
+  padding:5px;
+  border-radius: 30%;
+  margin-bottom: 5px;
 }
 
 .result p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
+  text-align: center;
+  padding:4px;
+  width: 700px;
+  border-radius: 2%;
+  box-shadow: 0px 0px 8px #C7C7C7;
 }
 
 .result p span {
-  color: #800080;
-  font-size: 22px;
+  color:black;
+  font-size: 24px;
+  text-align: center;
+  text-shadow: 0px 0px 2px #c3dd83;
+}
+.result{
+  max-height:850px;
+  max-width:850px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
 }
